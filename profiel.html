@@ -10,7 +10,7 @@
 <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
  
         <script>
-            var url = "http://localhost:5820/test/query?reasoning=true"; 
+            var url = "http://localhost:5820/test#!/query?reasoning=true"; 
             var query = "PREFIX ontology: <http://www.example.com/mythical_creatures/> PREFIX dbp: <http://dbpedia.org/property/> SELECT ?subj ?myth ?gender ?habitat ?region ?abs WHERE { ?subj ontology:occursIn ?myth. OPTIONAL { ?subj ontology:hasHabitat ?habitat.  } OPTIONAL {   ?subj ontology:hasGender ?gender .  } OPTIONAL {   ?subj ontology:livesIn ?region .  } OPTIONAL {   ?subj dbp:hasAbstract ?abs .  } }";
 
             $.ajax({
